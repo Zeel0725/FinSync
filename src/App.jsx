@@ -1,35 +1,38 @@
-import React from 'react';
+import React from "react";
+import "./App.css"
 
-class App extends React.Component{
-    state = {message : ""}
-    fun1 = (childData)=>{
-        this.setState({message : childData})
-    }
-    render(){
-        return(
-            <div>
-                <AppInner parentCallback =
-                {this.fun1}/>
-                <p> {this.state.message}</p>
-            </div>
-        );
-    }
-};export default App;
+class EmployeeDetails extends React.Component{
+  constructor(props) {
+   super(props);
+  this.state = { Name : '', emp_id: '', emp_email: '' };
+  }
+  handleInputChange = event => {
+    const { name, value } = event.target; 
+    this.setState({ [name]: value });
+}
+render() {
+  const { Name, emp_id, emp_email } = this.state;
+  const {emp_desg} = this.props;
+    return(
+       <div className="EmployeeDetails">
 
-class AppInner extends React.Component{
-    sendData = ()=>{
-        setInterval(()=>{
+        <input type="text" name="Name" value={Name}
+          onChange= {this.handleInputChange} placeholder='Enter Name'/>
+        < br />
 
-            const currTime =Date();
-            this.props.parentCallback(currTime);
+        <input type="text" name="emp_id" value={emp_id}
+          onChange= {this.handleInputChange} placeholder='Enter Employee Id'/>
+        < br />
 
-        },3000);
-    }
-    componentDidMount(){
-        this.sendData();
-    }
-    render(){
-        return <div></div>
-    }
-};
+        <input type="email" name="emp_email" value={emp_email}
+          onChange={ this.handleInputChange }
+          placeholder='Enter Employee Email' />
+        < br />
 
+        <button onClick={() => alert(`Name: ${Name}\nEmployee ID: ${emp_id}\nEmail: ${emp_email}\nEmp_desg: ${emp_desg}`)}>
+          Show Details
+        </button>
+      </div>
+    );
+  }
+}export default EmployeeDetails;
