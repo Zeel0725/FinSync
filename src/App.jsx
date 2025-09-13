@@ -18,7 +18,7 @@ render() {
     return(
         <>
           <header>
-            FinSync
+            <h1>FinSync</h1>
           </header>
           <div className="EmployeeDetails">
 
