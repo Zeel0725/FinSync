@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import ContentRating from "./Components/ContentRating"
+import ContentRating from "./Components/ContentRating";
+import Contact from "./Components/contact";
 
 class EmployeeDetails extends React.Component{
   constructor(props) {
@@ -37,6 +38,7 @@ render() {
 
           </div>
           <ContentRating/>
+          <Contact/>
         </>
       
     );
