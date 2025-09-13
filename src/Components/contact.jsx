@@ -6,9 +6,7 @@ const Contact = () => {
     return (
         <div className="contact">
             {/* Page Header */}
-            <header>
-                <h1>Welcome!</h1>
-            </header>
+            
             <section className="contact">
                 {/* Section heading */}
                 <h2>Contact Us</h2>
