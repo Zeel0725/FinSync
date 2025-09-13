@@ -17,6 +17,9 @@ render() {
   const {emp_desg} = this.props;
     return(
         <>
+          <header>
+            FinSync
+          </header>
           <div className="EmployeeDetails">
 
             <input type="text" name="Name" value={Name}
