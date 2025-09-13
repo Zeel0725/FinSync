@@ -3,7 +3,7 @@
             return (
         <>
             <footer>
-            <p>&copy; FinSync Organization. All rights reserved.</p>
+            <p>&copy; Fintech Organization. All rights reserved.</p>
             </footer>
         </>
     )}
