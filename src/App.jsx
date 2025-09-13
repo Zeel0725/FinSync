@@ -37,7 +37,7 @@ render() {
             </button>
 
           </div>
-          <ContentRating/>
+          {/* <ContentRating/> */}
           <Contact/>
         </>
       
