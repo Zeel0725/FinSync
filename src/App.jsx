@@ -42,7 +42,7 @@ render() {
 
           </div>
           {/* <ContentRating/> */}
-          <TodoList/>
+          {/* <TodoList/> */}
           <Contact/>
         </>
       
