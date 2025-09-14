@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import ContentRating from "./Components/ContentRating";
 import Contact from "./Components/contact";
+import TodoList from './Components/TodoList';
 
 class EmployeeDetails extends React.Component{
   constructor(props) {
@@ -41,6 +42,7 @@ render() {
 
           </div>
           {/* <ContentRating/> */}
+          <TodoList/>
           <Contact/>
         </>
       
